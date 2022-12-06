@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pekan09</title>
+</head>
+<body>
+    <h2>Menghitung Dua Jumlah Bilangan</h2>
+    <input type="number" id="bilangan1" onchange="hitung()">
+    <br>
+    +
+    <br>
+    <input type="number" id="bilangan2" onchange="hitung()">
+    <br>
+    <span id="jumlah">=</span>
+
+    <script>
+        function hitung(){
+            let bil1= document.getElementById("bilangan1").value;
+            let bil2= document.getElementById("bilangan2").value;
+            let hitung= parseInt(bil1) + parseInt(bil2) 
+            document.getElementById("jumlah").innerHTML = ("=" + hitung)
+        }
+    </script>
+</body>
+</html>
